@@ -21,5 +21,9 @@ public class PredicateExample {
     palavras.stream()
         .filter(maisDeCincoCaracteres)
         .forEach(System.out::println);
+
+    // palavras.stream()
+    //     .filter(palavra -> palavra.length() > 5)
+    //     .forEach(System.out::println);    
   }
 }

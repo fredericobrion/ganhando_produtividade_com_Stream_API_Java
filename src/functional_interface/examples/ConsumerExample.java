@@ -25,5 +25,23 @@ public class ConsumerExample {
     numeros.stream()
         .filter(n -> n % 2 == 0)
         .forEach(System.out::println);
+
+    // *Outra forma
+    // numeros.stream().forEach(imprimirNumeroPar);
+
+    // numeros.stream().forEach(new Consumer<Integer>() {
+    //   @Override
+    //   public void accept(Integer n) {
+    //     if (n % 2 == 0) {
+    //       System.out.println(n);
+    //     }
+    //   }
+    // });
+
+    // numeros.forEach(n -> {
+    //   if (n % 2 == 0) {
+    //     System.out.println(n);
+    //   }
+    // });
   }
 }
